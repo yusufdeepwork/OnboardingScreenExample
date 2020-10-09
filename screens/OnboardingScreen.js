@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
 
-const OnBoardingScreen = ({navigation}) => {
+const OnboardingScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text>Onboarding Screen</Text>
@@ -10,7 +10,7 @@ const OnBoardingScreen = ({navigation}) => {
   );
 };
 
-export default OnBoardingScreen;
+export default OnboardingScreen;
 
 const styles = StyleSheet.create({
   container: {
