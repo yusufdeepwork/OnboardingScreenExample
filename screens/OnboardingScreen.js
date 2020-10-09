@@ -1,10 +1,34 @@
 import React from 'react';
-import {StyleSheet, Text, View, Button, Image} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  Button,
+  Image,
+  TouchableOpacity,
+} from 'react-native';
 import Onboarding from 'react-native-onboarding-swiper';
+
+const Skip = (props) => {
+  <Button title="Skip" color="#000000" {...props} />;
+};
+
+const Next = (props) => {
+  <Button title="Next" color="#000000" {...props} />;
+};
+const Done = ({props}) => {
+  <TouchableOpacity style={{marginHorizontal: 8}} {...props} >
+
+    <Text style={{fontSize:16}}>Done</Text>
+  </TouchableOpacity>;
+};
 
 const OnboardingScreen = ({navigation}) => {
   return (
     <Onboarding
+      SkipButtonComponent={Skip}
+      NextButtonComponent={Next}
+      DoneButtonComponent={Done}
       // We must'nt go previous page when it is finished.
       onSkip={() => navigation.replace('Login')}
       onDone={() => navigation.navigate('Login')}
