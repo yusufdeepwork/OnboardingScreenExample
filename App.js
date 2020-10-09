@@ -11,7 +11,7 @@ const App = () => {
     <NavigationContainer>
       <AppStack.Navigator headerMode="none">
         <AppStack.Screen name="Onboarding" component={OnboardingScreen} />
-        <AppStack.Screen name="LoginScreen" component={LoginScreen} />
+        <AppStack.Screen name="Login" component={LoginScreen} />
       </AppStack.Navigator>
     </NavigationContainer>
   );

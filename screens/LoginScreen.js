@@ -1,11 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, View, Button} from 'react-native';
 
-const LoginScreen = ({navigation}) => {
+const LoginScreen = () => {
   return (
     <View style={styles.container}>
       <Text>Login Screen</Text>
-      <Button title="Click Here" onPress={() => navigation.navigate('Login')} />
+      <Button title="Click Here" onPress={() => alert('Button Clicked!')} />
     </View>
   );
 };
