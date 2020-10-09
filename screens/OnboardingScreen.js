@@ -7,22 +7,22 @@ const OnboardingScreen = ({navigation}) => {
     <Onboarding
       pages={[
         {
-          backgroundColor: '#fff',
+          backgroundColor: '#a6e4d0',
           image: <Image source={require('../assets/onboarding-img1.png')} />,
-          title: 'Onboarding 1',
-          subtitle: 'Done with React Native Onboarding Swiper',
+          title: 'Connect to the World',
+          subtitle: 'A New Way To Connect With The World',
         },
         {
-          backgroundColor: '#fff',
+          backgroundColor: '#fdeb93',
           image: <Image source={require('../assets/onboarding-img2.png')} />,
-          title: 'Onboarding 2',
-          subtitle: 'Done with React Native Onboarding Swiper',
+          title: 'Share your Favorites',
+          subtitle: 'Share Your Thoughts with Similar Kind of People',
         },
         {
-          backgroundColor: '#fff',
+          backgroundColor: '#e9bcbe',
           image: <Image source={require('../assets/onboarding-img3.png')} />,
-          title: 'Onboarding 3',
-          subtitle: 'Done with React Native Onboarding Swiper',
+          title: 'Become the Star',
+          subtitle: 'Let the Spot Light Capture You',
         },
       ]}
     />
