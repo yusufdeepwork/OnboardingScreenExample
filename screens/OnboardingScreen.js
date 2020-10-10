@@ -20,18 +20,13 @@ const Dots = ({selected}) => {
   );
 };
 
-const Skip = (props) => {
-  <Button title="Skip" color="#000000" {...props} />;
-};
-
-const Next = (props) => {
-  <Button title="Next" color="#000000" {...props} />;
-};
-const Done = ({props}) => {
+const Skip = ({...props}) => <Button title="Skip" color="#000000" {...props} />;
+const Next = ({...props}) => <Button title="Next" color="#000000" {...props} />;
+const Done = ({...props}) => (
   <TouchableOpacity style={{marginHorizontal: 8}} {...props}>
     <Text style={{fontSize: 16}}>Done</Text>
-  </TouchableOpacity>;
-};
+  </TouchableOpacity>
+);
 
 const OnboardingScreen = ({navigation}) => {
   return (

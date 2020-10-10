@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect,useState} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import LoginScreen from './screens/LoginScreen';
@@ -7,11 +7,11 @@ import AsyncStorage from '@react-native-community/async-storage';
 const AppStack = createStackNavigator();
 
 const App = () => {
-  const [isFirstLaunch, setIsFirstLaunch] = React.useState(null);
+  const [isFirstLaunch, setIsFirstLaunch] = useState(null);
 
   useEffect(() => {
     AsyncStorage.getItem('alreadyLaunched').then((value) => {
-      if (value === null) {
+      if (value == null) {
         AsyncStorage.setItem('alreadyLaunched', 'true');
         setIsFirstLaunch(true);
       } else {
