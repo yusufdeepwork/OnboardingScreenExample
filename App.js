@@ -11,14 +11,14 @@ const App = () => {
 
   useEffect(() => {
     AsyncStorage.getItem('alreadyLaunched').then((value) => {
-      if (value == null) {
+      if (value === null) {
         AsyncStorage.setItem('alreadyLaunched', 'true');
         setIsFirstLaunch(true);
       } else {
         setIsFirstLaunch(false);
       }
     });
-  });
+  }, []);
 
   if (isFirstLaunch === null) {
     return null;
